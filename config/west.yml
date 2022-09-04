@@ -1,11 +1,6 @@
-manifest:
-  remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-  projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
-  self:
-    path: config
+
+include:
+  - board: nrfmicro_13
+    shield: klor_left
+  - board: nrfmicro_13
+    shield: klor_right
